@@ -1,11 +1,11 @@
 import React from 'react'
 
 function CartWidget() {
-    const Count=UseState(0)
+    const Count=useState(0)
     return (
     <div>
         <img src="./public/cart"></img> 
-        <p> [Count]</p>
+        <p> {Count}</p>
     </div>
   )
 }

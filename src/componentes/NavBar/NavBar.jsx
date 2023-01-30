@@ -4,9 +4,17 @@ import CartWidget from '../CartWidget/CartWidget'
 
 
 function NavBar() {
+    const NavStyle={
+      background: "linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9)",
+      color: "white",
+      padding: "10",
+      fontFamily: "Arial",
+      textAlign: "center"
+    };
+
     const Brand = () => {
         return (
-          <div>
+          <div style={NavStyle}>
               <h1>Play</h1>
               <h4>Fun is the new Sexy</h4>
           </div>
@@ -17,7 +25,7 @@ function NavBar() {
       <div>
         <Brand />
         
-        <ul>
+        <ul style={NavStyle}>
             <li>
                <a>Novedades</a> 
             </li>
